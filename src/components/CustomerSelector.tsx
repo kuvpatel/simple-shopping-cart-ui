@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-
 import { getCustomers } from "../api/customerApi";
-
 import type { Customer } from "../models/Customer";
 
 
@@ -44,9 +42,7 @@ export function CustomerSelector({
       e.target.value
     );
 
-
     const id = Number(e.target.value);
-
 
     console.log(
       "Converted id:",
@@ -67,13 +63,9 @@ export function CustomerSelector({
   return (
 
     <div className="mb-3">
-
       <label className="form-label fw-bold">
-
         Customer
-
       </label>
-
 
       <select
 
